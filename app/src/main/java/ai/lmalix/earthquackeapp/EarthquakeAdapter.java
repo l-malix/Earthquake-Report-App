@@ -92,6 +92,8 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         time.setText(currentItem.getTime());
         magnitudeCircle.setColor(magnitudeColor);
 
+
+
         return convertView;
     }
 }

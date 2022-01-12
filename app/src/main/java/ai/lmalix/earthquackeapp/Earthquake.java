@@ -6,12 +6,14 @@ public class Earthquake {
     private String place;
     private String date;
     private String time;
+    private String url;
 
-    public Earthquake(String magnitude, String place, String date, String time) {
+    public Earthquake(String magnitude, String place, String date, String time, String url) {
         this.magnitude = magnitude;
         this.place = place;
         this.date = date;
         this.time = time;
+        this.url = url;
     }
 
     public String getMagnitude() {
@@ -44,5 +46,13 @@ public class Earthquake {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
